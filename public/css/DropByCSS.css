@@ -1,5 +1,4 @@
 /*CSS for the dropdown menu*/
-
 .dropbtn {
     background-color: #3498DB;
     color: white;
@@ -15,7 +14,8 @@
   
   .dropdown {
     position: relative;
-    display: inline-block;
+    display: block;
+    text-align: center;
   }
   
   .dropdown-content {
@@ -26,6 +26,9 @@
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
   }
   
   .dropdown-content a {
@@ -37,7 +40,9 @@
   
   .dropdown a:hover {background-color: #ddd;}
   
-  .show {display: block;}
+  .show {
+    display: block;
+  }
 
 /* CSS for the collapsible side panel */
   body {
@@ -89,3 +94,8 @@
   .openbtn:hover {
     background-color:#444;
   }
+
+  /*#two {
+    display: block;
+    text-align: center;
+  }*/
