@@ -35,7 +35,10 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', index.view);
-app.get('/food', index.viewFood);
+app.get('/list', index.viewList);
+app.get('/create', index.viewCreate);
+app.get('/myEvents', index.viewMyEvents);
+app.get('/map', index.viewMap);
 // Example route
 // app.get('/users', user.list);
 
