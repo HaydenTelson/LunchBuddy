@@ -11,18 +11,28 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src = "js/mapPage.js"></script>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <form>
+    <input type=button 
+    value="+"
+    onClick="window.location.pathname = '/create'">
+    </form>
 
     <button class="openbtn" >☰</button> 
     <div id="mySidepanel" class="sidepanel">
       <a class="closebtn" >×</a>
-      <a href="index">Home Page</a>
+      <a href="/">Home Page</a>
       <a href="list">Events List</a>
       <a href="map">View Map</a>
       <a href="create">Create Event</a>
       <a href="myEvents">Your Events</a>
     </div>
   
+    <form>
+    <input type=button 
+    value="Refresh"
+    onClick="window.location.pathname = '/map'">
+    </form>
+
     <div class="dropdown">
         <button class="dropbtn">Filter</button>
         <div id="myDropdown" class="dropdown-content">
@@ -35,7 +45,7 @@
 </div>
 
 <div id="two">
-  <img src="Map2.png" alt="Map" class="img">
+    <img src="images/Map2.png" alt="Map" class="img" style="height: 500px;">
 </div>
 </body>
 </html>
