@@ -99,3 +99,10 @@
     display: block;
     text-align: center;
   }
+
+  .top form {
+    float: right;
+  }
+  .middle form {
+    float: right;
+  }
