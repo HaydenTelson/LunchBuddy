@@ -2,6 +2,7 @@
 <head>
     <title>DropBy</title>
     <link href="css/DropByCSS.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,11 +15,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <div class="top">
-    <form>
+    {{!-- <form>
     <input type=button 
     value="+"
     onClick="window.location.pathname = '/create'">
-    </form>
+    </form> --}}
+
+    <a href="create">
+        <i class="far fa-plus-square fa-3x"></i>
+    </a>
 
     <button class="openbtn" >☰</button>
     <div id="mySidepanel" class="sidepanel">
@@ -32,11 +37,14 @@
     </div>
 
     <div class="middle">
-    <form>
+    {{!-- <form>
     <input type=button 
     value="Refresh"
     onClick="window.location.pathname = '/myEvents'">
-    </form>
+    </form> --}}
+    <a href="myEvents">
+        <i class="fas fa-sync-alt"></i>
+    </a>
 
     <center><select>
     <option value="filter">Select Filter</option>
