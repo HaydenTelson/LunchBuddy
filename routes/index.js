@@ -20,5 +20,5 @@ exports.viewMyEvents = function(req, res){
 };
 
 exports.viewMap = function(req, res){
-  res.render('Map');
+  res.render('map');
 };
