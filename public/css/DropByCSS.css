@@ -60,6 +60,7 @@
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    display: inline-block;
   }
   
   .sidepanel a {
@@ -100,9 +101,18 @@
     text-align: center;
   }
 
-  .top form {
+  .top i {
     float: right;
+    display: inline-block;
   }
-  .middle form {
-    float: right;
+
+  .middle {
+    text-align: center;
+  }
+  .middle i {
+    display: inline-block;
+  } 
+
+  .middle select {
+    display: inline-block;
   }

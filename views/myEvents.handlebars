@@ -2,6 +2,7 @@
 <head>
     <title>DropBy</title>
     <link href="css/DropByCSS.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,11 +12,22 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src = "js/mapPage.js"></script>
 
+<<<<<<< HEAD
     <form>
+=======
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <div class="top">
+    {{!-- <form>
+>>>>>>> daa82114ee95e2b483a90db48bb261db01c739aa
     <input type=button 
     value="+"
     onClick="window.location.pathname = '/create'">
-    </form>
+    </form> --}}
+
+    <a href="create">
+        <i class="far fa-plus-square fa-3x"></i>
+    </a>
 
     <button class="openbtn" >☰</button>
     <div id="mySidepanel" class="sidepanel">
@@ -26,20 +38,28 @@
       <a href="create">Create Event</a>
       <a href="myEvents">Your Events</a>
     </div>
+    </div>
 
-    <form>
+    <div class="middle">
+    {{!-- <form>
     <input type=button 
     value="Refresh"
     onClick="window.location.pathname = '/myEvents'">
-    </form>
+    </form> --}}
 
-    <center><select>
+    <select>
     <option value="filter">Select Filter</option>
     <option value="food">Food</option>
     <option value="study">Study</option>
     <option value="show">Show</option>
     <option value="guestspeaker">Guest Speaker</option>
-    </select></center>
+    </select>
+
+    <a href="myEvents">
+        <i class="fas fa-sync-alt"></i>
+    </a>
+
+    </div>
 </div>
 
 <div id="two">
