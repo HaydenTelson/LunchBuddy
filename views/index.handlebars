@@ -1,51 +1,27 @@
 <html>
-<head>
-    <title>DropBy</title>
-    <link href="css/DropByCSS.css" rel="stylesheet">
-</head>
-<body>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-<div id="one">
-    <center><h2>Login Page</h2></center>
+    <head>
+        <title>DropBy</title>
+        <link href="css/DropByCSS.css" rel="stylesheet">
+    </head>
 
     <script src="https://code.jquery.com/jquery.js"></script>
-    <script src = "js/homePage.js"></script>
+    <body>
+        <div id="loginBoxes">
+            <center><h2>Login Page</h2></center>
+            <center>
+            <form>
+                Username:<br>
+                <input type="text" name="username"><br>
+                Password:<br>
+                <input type="text" name="password"><br>
+            </form>
+            </center>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<div id="two">
-    <center><form>
-    <input type=button 
-    value="List View"
-    onClick="window.location.pathname = '/list'">
-</form></center>
-</div>
-<div id="three">
-    <center><form>
-    <input type=button 
-    value="Map View"
-    onClick="window.location.pathname = '/map'">
-</form></center>
-</div>
-<div id="four">
-    <center><form>
-    <input type=button 
-    value="Create New Event"
-    onClick="window.location.pathname = '/create'">
-</form></center>
-</div>
-<div id="five">
-    <center><form>
-    <input type=button 
-    value="My Events"
-    onClick="window.location.pathname = '/myEvents'">
-</form></center>
-</div>
-<div id="six">
-    <center><form>
-    <input type=button 
-    value="Logout"
-    onClick="window.location.pathname = '/'">
-</form></center>
-</body>
+            <center><form>
+                <input type=button 
+                value="Login!"
+                onClick="window.location.pathname = '/home'">
+            </form></center>
+        </div>
+    </body>
 </html>

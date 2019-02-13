@@ -22,3 +22,7 @@ exports.viewMyEvents = function(req, res){
 exports.viewMap = function(req, res){
   res.render('map');
 };
+
+exports.viewHome  = function(req, res){
+  res.render('home');
+};
