@@ -1,5 +1,5 @@
 {
-    "event": [
+    "events": [
         {
             "eventTitle": "Cogs Studying",
             "location": "Muir",
@@ -7,6 +7,25 @@
             "time": "11:00am",
             "price": "$5.00",
             "description": "Come study today at Muir for Cogs!"
+        },
+    
+        {
+            "eventTitle": "Free Food!",
+            "location": "ERC",
+            "date": "2/15/2019",
+            "time": "1:00pm",
+            "price": "Free",
+            "description": "Today on ridge walk the music club is giving away free burritos!"
+        },
+
+        {
+            "eventTitle": "Foosh Show",
+            "location": "Muir Woods",
+            "date": "2/20/2019",
+            "time": "8:00pm",
+            "price": "Free",
+            "description": "We are having a free show put on by the UCSD Foosh Improv Group, Come by!"
         }
     ]
+
 }
