@@ -116,3 +116,8 @@
   .middle select {
     display: inline-block;
   }
+
+  .container {
+    border: 5px solid black;
+    border-radius: 7px;
+  }
