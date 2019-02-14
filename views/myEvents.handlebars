@@ -45,36 +45,17 @@
     </div>
 </div>
 
-<div id="studying">
-  <strong>{{cogsStudying.eventTitle}}</strong><br>
-  Location: {{cogsStudying.location}}<br>
-  Time: {{cogsStudying.time}}<br>
-  Date: {{cogsStudying.date}}<br>
-  Price: {{cogsStudying.price}}<br>
-  Description: {{cogsStudying.description}}
-</div>
-
-<br>
-
-<div id="freeFood">
-  <strong>{{freeFood.eventTitle}}</strong><br>
-  Location: {{freeFood.location}}<br>
-  Time: {{freeFood.time}}<br>
-  Date: {{freeFood.date}}<br>
-  Price: {{freeFood.price}}<br>
-  Description: {{freeFood.description}}
-</div>
-
-<br>
-
-<div id="improvShow">
-  <strong></strong>{{improvShow.eventTitle}}</strong><br>
-  Location: {{improvShow.location}}<br>
-  Time: {{improvShow.time}}<br>
-  Date: {{improvShow.date}}<br>
-  Price: {{improvShow.price}}<br>
-  Description: {{improvShow.description}}
-</div>
+    {{# each events}}
+    <div class="events-div">
+        <strong>{{this.eventTitle}}</strong><br>
+        Location: {{this.location}}<br>
+        Time: {{this.time}}<br>
+        Date: {{this.date}}<br>
+        Price: {{this.price}}<br>
+        Description: {{this.description}}
+    </div>
+    <br>
+    {{/ each}}
 
 </body>
 </html>
