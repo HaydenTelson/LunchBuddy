@@ -3,6 +3,8 @@
  * GET home page.
  */
 
+ var data = require("../data.json")
+
 exports.view = function(req, res){
   res.render('index');
 };
@@ -16,7 +18,7 @@ exports.viewCreate = function(req, res){
 };
 
 exports.viewMyEvents = function(req, res){
-  res.render('myEvents');
+  res.render('myEvents', {"event": data.event[0]});
 };
 
 exports.viewMap = function(req, res){

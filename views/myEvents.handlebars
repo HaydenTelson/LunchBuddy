@@ -12,19 +12,6 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src = "js/mapPage.js"></script>
 
-<<<<<<< HEAD
-    <form>
-=======
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <div class="top">
-    {{!-- <form>
->>>>>>> daa82114ee95e2b483a90db48bb261db01c739aa
-    <input type=button 
-    value="+"
-    onClick="window.location.pathname = '/create'">
-    </form> --}}
-
     <a href="create">
         <i class="far fa-plus-square fa-3x"></i>
     </a>
@@ -32,7 +19,7 @@
     <button class="openbtn" >☰</button>
     <div id="mySidepanel" class="sidepanel">
       <a class="closebtn" >×</a>
-      <a href="/">Home Page</a>
+      <a href="home">Home Page</a>
       <a href="list">Events List</a>
       <a href="map">View Map</a>
       <a href="create">Create Event</a>
@@ -41,11 +28,6 @@
     </div>
 
     <div class="middle">
-    {{!-- <form>
-    <input type=button 
-    value="Refresh"
-    onClick="window.location.pathname = '/myEvents'">
-    </form> --}}
 
     <select>
     <option value="filter">Select Filter</option>
@@ -63,7 +45,12 @@
 </div>
 
 <div id="two">
-  <p> Future spot for list of user created events </p>
+  <p>{{event.eventTitle}}</p><br>
+  <p>{{event.location}}</p><br>
+  <p>{{event.time}}</p><br>
+  <p>{{event.date}}</p><br>
+  <p>{{event.price}}</p><br>
+  <p>{{event.description}}</p><br>
 </div>
 </body>
 </html>
