@@ -9,7 +9,7 @@ exports.view = function(req, res){
 };
 
 exports.viewList = function(req, res){
-  res.render('list', {"cogsStudying": data.events[0], "freeFood": data.events[1], "improvShow": data.events[2]});
+  res.render('list', data);
 };
 
 exports.viewCreate = function(req, res){
@@ -17,7 +17,7 @@ exports.viewCreate = function(req, res){
 };
 
 exports.viewMyEvents = function(req, res){
-  res.render('myEvents', {"cogsStudying": data.events[0], "freeFood": data.events[1], "improvShow": data.events[2]});
+  res.render('myEvents', data);
 };
 
 exports.viewMap = function(req, res){
