@@ -47,12 +47,14 @@
 
     {{# each events}}
     <div class="container">
+        <div class="eventText"></div>
         <strong>{{this.eventTitle}}</strong><br>
         Location: {{this.location}}<br>
         Time: {{this.time}}<br>
         Date: {{this.date}}<br>
         Price: {{this.price}}<br>
         Description: {{this.description}}
+        </div>
     </div>
     <br>
     {{/ each}}

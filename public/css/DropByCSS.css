@@ -121,3 +121,7 @@
     border: 5px solid black;
     border-radius: 7px;
   }
+
+  .eventText {
+    padding: 20px;
+  }
