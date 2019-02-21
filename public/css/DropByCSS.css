@@ -96,19 +96,47 @@
     background-color:#444;
   }
 
+  header {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    background-color: lavender;
+  }
+
+  #homeHeader {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
+
   #two {
     display: block;
     text-align: center;
   }
 
+
+  .top {
+    background-color: lavender;
+    padding-bottom: 20px;
+  }
+
   .top i {
     float: right;
-    display: inline-block;
   }
 
   .middle {
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
+
   .middle i {
     display: inline-block;
   } 
@@ -125,3 +153,24 @@
   .eventText {
     padding: 20px;
   }
+
+  .home {
+    background-color: lavender;
+    padding-bottom: 80px;
+  }
+
+  .login {
+    background-color: lavender;
+    padding-bottom: 80px;
+  }
+
+  .enter {
+    text-align: center;
+  }
+
+  #textForm {
+    display: inline-block;
+    text-align: left;
+  }
+
+

@@ -5,12 +5,11 @@
 </head>
 <body>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<div id="one">
-    <center><h2> Create new events </h2></center>
-
+  
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src = "js/mapPage.js"></script>
 
+    <div class="top">
     <button class="openbtn" >☰</button> 
     <div id="mySidepanel" class="sidepanel">
       <a class="closebtn" >×</a>
@@ -20,10 +19,12 @@
       <a href="create">Create Event</a>
       <a href="myEvents">Your Events</a>
     </div>
-</div>
+    <header><h2> Create new events </h2></header>
+    </div>
 
-<div id="two">
-  <center><form>
+<div class="enter">
+  <div id="textForm">
+  <form>
   Event Type:<br>
   <select>
     <option value= "eventType">Select an Event Type</option>
@@ -33,22 +34,24 @@
     <option value="guestspeaker">Guest Speaker</option>
   </select>
   <br>
-  Event Title<br>
+  Event Title
   <input type="text" name="Title"><br>
-  Location:<br>
+  Location:
   <input type="text" name="location"><br>
-  Date:<br>
+  Date:
   <input type="text" name="date"><br>
-  Time:<br>
+  Time:
   <input type="text" name="time"><br>
-  Price:<br>
+  Price:
   <input type="text" name="price"><br>
-  Description:<br>
+  Description:
   <input type="text" name="description"><br>
   <center><form>
     <a class="button" href="/myEvents">Post!</a>
 </form></center>
-</form></center>
+</form>
 </div>
+</div>
+
 </body>
 </html>
