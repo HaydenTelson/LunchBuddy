@@ -2,6 +2,8 @@
     <head>
         <title>DropBy</title>
         <link href="css/DropByCSS.css" rel="stylesheet">
+        {{> facebook}}
+	    <script src="/js/facebook.js"></script>
     </head>
 
     <script src="https://code.jquery.com/jquery.js"></script>
@@ -21,11 +23,21 @@
             </form>
             </center>
 
-            <center><form>
-                <input type=button 
-                value="Login!"
-                onClick="window.location.pathname = '/home'">
-            </form></center>
+            <center>
+                <a class="button" href="/home">Login!</a>
+            </center>
+
+            <center>
+                <p class="facebookLogin">Or login through Facebook <br>
+					<fb:login-button scope="public_profile,email" onlogin="checkLoginState();"> </fb:login-button>
+			</p>
+            <div id="facebookPhoto" class="profile">
+			    <img id="photo" class='img-responsive'/>
+		    </div>
+            </center>
+
+
+
         </div>
     </body>
 </html>
