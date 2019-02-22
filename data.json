@@ -1,34 +1,51 @@
 {
-    "events": [
-        {
-            "eventType": "Studying",
+    "study":
+        [
+            {
+            "eventType": "study",
             "eventTitle": "Cogs Studying",
             "location": "Muir",
             "date": "1/10/2019",
             "time": "11:00am",
             "price": "$5.00",
             "description": "Come study today at Muir for Cogs!"
-        },
-    
-        {
-            "eventType": "Food",
+            }
+        ],
+
+
+    "food":
+        [
+            {
             "eventTitle": "Free Food!",
             "location": "ERC",
             "date": "2/15/2019",
             "time": "1:00pm",
             "price": "Free",
             "description": "Today on ridge walk the music club is giving away free burritos!"
-        },
+            }
+        ],
 
-        {
-            "eventType": "Show",
+    "show":
+        [
+            {
             "eventTitle": "Foosh Show",
             "location": "Muir Woods",
             "date": "2/20/2019",
             "time": "8:00pm",
             "price": "Free",
             "description": "We are having a free show put on by the UCSD Foosh Improv Group, Come by!"
-        }
-    ]
-
+            }
+        ],
+    
+    "guestSpeaker":
+        [
+            {
+            "eventTitle": "Cogs Speaker",
+            "location": "PC Theater",
+            "date": "3/15/2019",
+            "time": "7:00pm",
+            "price": "$10",
+            "description": "Don Norman is holding a talk about design in the PC Theater"
+            }
+        ]
 }

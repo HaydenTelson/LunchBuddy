@@ -33,13 +33,14 @@
     </div>
   
     <div class="middle">
-
     <select>
-    <option value="filter">Select Filter</option>
-    <option value="food">Food</option>
-    <option value="study">Study</option>
-    <option value="show">Show</option>
-    <option value="guestspeaker">Guest Speaker</option>
+    <div id="myBtnContainer">
+    <option><button class="btn active" onclick="filterSelection('all')"> All Events</button></option>
+    <option><button class="btn" onclick="filterSelection('food')"> Food</button></option>
+    <option><button class="btn" onclick="filterSelection('study')"> Study</button></option>
+    <option><button class="btn" onclick="filterSelection('show')"> Show</button></option>
+    <option><button class="btn" onclick="filterSelection('guestSpeaker')"> Guest Speaker</button></option>
+    </div>
     </select>
 
     <a href="list">
