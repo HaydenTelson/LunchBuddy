@@ -3,6 +3,7 @@
  */
 
 var data = require("../data.json")
+var fs = require('fs');
 
 exports.view = function(req, res){
   res.render('index');
@@ -27,3 +28,12 @@ exports.viewMap = function(req, res){
 exports.viewHome  = function(req, res){
   res.render('home');
 };
+
+//Take in the information from the create event form, store it data.JSON, then redirect client to myEvents
+exports.createEvent = function(req,res){
+  console.log(req.body);
+  data[req.body.eventType].push(req.body);
+  console.log(data);
+  fs.writeFileSync("data.json", JSON.stringify(data, null, 4));
+  res.render('myEvents', data);
+}
