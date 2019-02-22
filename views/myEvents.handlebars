@@ -9,7 +9,52 @@
 <div id="one">
 
     <script src="https://code.jquery.com/jquery.js"></script>
-    <script src = "js/mapPage.js"></script>
+
+    <script> 
+    $(document).ready(function() 
+    {
+        console.log("in ready function")
+        $("#myBtnContainer").change(function () {
+        var firstDropVal = $('#myBtnContainer option:selected').val();
+        filterSelection(firstDropVal);
+        });
+        function filterSelection(eventType)
+        {
+            console.log(eventType);
+            if (eventType == "Food"){
+                $("#foodEvents").show()
+                $("#studyEvents").hide()
+                $("#showEvents").hide()
+                $("#speakerEvents").hide()
+
+            }
+            else if (eventType == "Study"){
+                $("#foodEvents").hide()
+                $("#studyEvents").show()
+                $("#showEvents").hide()
+                $("#speakerEvents").hide()
+            }
+            else if (eventType == "Show"){
+                $("#foodEvents").hide()
+                $("#studyEvents").hide()
+                $("#showEvents").show()
+                $("#speakerEvents").hide()
+            }
+            else if (eventType == "Guest Speaker"){
+                $("#foodEvents").hide()
+                $("#studyEvents").hide()
+                $("#showEvents").hide()
+                $("#speakerEvents").show()
+            }
+            else if (eventType == "Display All"){
+                $("#foodEvents").show()
+                $("#studyEvents").show()
+                $("#showEvents").show()
+                $("#speakerEvents").show()
+            }
+        }
+    });
+    </script>
 
     <div class="top">
     <a href="create">
@@ -32,36 +77,84 @@
 
     <div class="middle">
 
-    <select>
-    <div id="myBtnContainer">
-    <option><button class="btn active" onclick="filterSelection('all')"> All Events</button></option>
-    <option><button class="btn" onclick="filterSelection('food')"> Food</button></option>
-    <option><button class="btn" onclick="filterSelection('study')"> Study</button></option>
-    <option><button class="btn" onclick="filterSelection('show')"> Show</button></option>
-    <option><button class="btn" onclick="filterSelection('guestSpeaker')"> Guest Speaker</button></option>
-    </div>
+    <div class="middle">
+    <select id="myBtnContainer">
+    <option><button class="btn active"> Display All</button></option>
+    <option><button class="btn"> Food</button></option>
+    <option><button class="btn"> Study</button></option>
+    <option><button class="btn"> Show</button></option>
+    <option><button class="btn"> Guest Speaker</button></option>
     </select>
 
-    <a href="myEvents">
-        <i class="fas fa-sync-alt"></i>
+    <a href="list">
+        <i class="fas fa-sync-alt fa-lg"></i>
     </a>
 
     </div>
 </div>
 
-    {{# each data}}
-    <div class="container">
+    <div id = "foodEvents">
+    {{# each food}}
+        <div class="container">
         <div class="eventText">
-        <strong>{{this.eventTitle}}</strong><br>
-        Location: {{this.location}}<br>
-        Time: {{this.time}}<br>
-        Date: {{this.date}}<br>
-        Price: {{this.price}}<br>
-        Description: {{this.description}}
+            <strong>{{this.eventTitle}}</strong><br>
+            Location: {{this.location}}<br>
+            Time: {{this.time}}<br>
+            Date: {{this.date}}<br>
+            Price: {{this.price}}<br>
+            Description: {{this.description}}
         </div>
-    </div>
-    <br>
+        </div>
+        <br>
     {{/ each}}
+    </div>
 
+    <div id = "studyEvents">
+    {{# each study}}
+        <div class="container">
+        <div class="eventText">
+            <strong>{{this.eventTitle}}</strong><br>
+            Location: {{this.location}}<br>
+            Time: {{this.time}}<br>
+            Date: {{this.date}}<br>
+            Price: {{this.price}}<br>
+            Description: {{this.description}}
+        </div>
+        </div>
+        <br>
+    {{/ each}}
+    </div>
+
+    <div id = "showEvents">
+    {{# each show}}
+        <div class="container">
+        <div class="eventText">
+            <strong>{{this.eventTitle}}</strong><br>
+            Location: {{this.location}}<br>
+            Time: {{this.time}}<br>
+            Date: {{this.date}}<br>
+            Price: {{this.price}}<br>
+            Description: {{this.description}}
+        </div>
+        </div>
+        <br>
+    {{/ each}}
+    </div>
+
+    <div id = "speakerEvents">
+    {{# each guestSpeaker}}
+        <div class="container">
+        <div class="eventText">
+            <strong>{{this.eventTitle}}</strong><br>
+            Location: {{this.location}}<br>
+            Time: {{this.time}}<br>
+            Date: {{this.date}}<br>
+            Price: {{this.price}}<br>
+            Description: {{this.description}}
+        </div>
+        </div>
+        <br>
+    {{/ each}}
+    </div>
 </body>
 </html>

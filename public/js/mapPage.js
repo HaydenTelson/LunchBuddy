@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    console.log("It's initializing!")
 	initializePage();
 })
 /* When the user clicks on the button, 
