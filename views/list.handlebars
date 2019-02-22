@@ -35,11 +35,11 @@
     <div class="middle">
     <select>
     <div id="myBtnContainer">
-    <option><button class="btn active" onclick="filterSelection('all')"> All Events</button></option>
-    <option><button class="btn" onclick="filterSelection('food')"> Food</button></option>
+    <option><button class="btn active" onclick="filterSelection('food')"> Food</button></option>
     <option><button class="btn" onclick="filterSelection('study')"> Study</button></option>
     <option><button class="btn" onclick="filterSelection('show')"> Show</button></option>
     <option><button class="btn" onclick="filterSelection('guestSpeaker')"> Guest Speaker</button></option>
+    <option><button class="btn" onclick="filterSelection('all')"> Show all</button></option>
     </div>
     </select>
 
@@ -50,7 +50,7 @@
     </div>
 </div>
 
-{{# each events}}
+{{# each food}}
     <div class="container">
       <div class="eventText">
         <strong>{{this.eventTitle}}</strong><br>
