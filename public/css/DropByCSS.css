@@ -174,4 +174,12 @@
     text-align: left;
   }
 
+  #googleMaps {
+    height: 400px;
+}
+
+#map {
+    height: 90%;
+}
+
 
