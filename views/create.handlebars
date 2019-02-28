@@ -1,8 +1,9 @@
 <html>
-<head>
+{{!-- <head>
     <title>DropBy</title>
     <link href="css/DropByCSS.css" rel="stylesheet">
-</head>
+</head> --}}
+{{> headers}}
 <body>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   
@@ -28,16 +29,22 @@
 
   <center><form action= "/createEvent" method="post">
   Event Type:
+<<<<<<< HEAD
   <select name = "eventType">
     <label value= "eventType">Select an Event Type</label>
+=======
+  <select name = "eventType" required>
+    <option value= "eventType">Select an Event Type</option>
+>>>>>>> master
     <option value="food">Food</option>
     <option value="study">Study</option>
     <option value="show">Show</option>
     <option value="guestspeaker">Guest Speaker</option>
   </select><br><br>
   Event Title:
-  <input type="text" name="eventTitle"><br><br>
+  <input type="text" name="eventTitle" required><br><br>
   Location:
+<<<<<<< HEAD
   <select name = "location">
     <option value= "location">Select a Location</option>
     <option value="Muir">Muir</option>
@@ -47,14 +54,17 @@
     <option value="Revelle">Revelle</option>
     <option value="Marshall">Marshall</option>
   </select><br><br>
+=======
+  <input type="text" name="location" required><br><br>
+>>>>>>> master
   Date:
-  <input type="date" name="date"><br><br>
+  <input type="date" name="date" required><br><br>
   Time:
-  <input type="time" name="time"><br><br>
+  <input type="time" name="time" required><br><br>
   Price:
-  <input type="text" name="price"><br><br>
+  <input type="text" name="price" required><br><br>
   Description:
-  <input type="text" name="description"><br><br>
+  <input type="text" name="description" required><br><br>
 
   <input type="submit">
   </form></center>
