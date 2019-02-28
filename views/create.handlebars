@@ -15,9 +15,8 @@
       <a class="closebtn" >×</a>
       <a href="home">Home Page</a>
       <a href="list">Events List</a>
-      <a href="map">View Map</a>
       <a href="create">Create Event</a>
-      <a href="myEvents">Your Events</a>
+      <a href="myEvents">My Events</a>
     </div>
     <header><h2> Create new events </h2></header>
     </div>
@@ -30,7 +29,7 @@
   <center><form action= "/createEvent" method="post">
   Event Type:
   <select name = "eventType">
-    <option value= "eventType">Select an Event Type</option>
+    <label value= "eventType">Select an Event Type</label>
     <option value="food">Food</option>
     <option value="study">Study</option>
     <option value="show">Show</option>
@@ -39,7 +38,15 @@
   Event Title:
   <input type="text" name="eventTitle"><br><br>
   Location:
-  <input type="text" name="location"><br><br>
+  <select name = "location">
+    <option value= "location">Select a Location</option>
+    <option value="Muir">Muir</option>
+    <option value="ERC">ERC</option>
+    <option value="Warren">Warren</option>
+    <option value="Sixth">Sixth</option>
+    <option value="Revelle">Revelle</option>
+    <option value="Marshall">Marshall</option>
+  </select><br><br>
   Date:
   <input type="date" name="date"><br><br>
   Time:

@@ -7,7 +7,7 @@
             "date": "1/10/2019",
             "time": "11:00am",
             "price": "$5.00",
-            "description": "Come study today at Muir for Cogs!"
+            "description": "Come study today at Muir for Cogs!" 
         }
     ],
     "food": [
@@ -36,6 +36,15 @@
             "time": "13:01",
             "price": "Free",
             "description": "Today there will be a guest speaeker at PC talking about cog sci and design"
+        },
+        {
+            "eventType": "food",
+            "eventTitle": "FOOD",
+            "location": "Erc",
+            "date": "0003-01-02",
+            "time": "01:01",
+            "price": "Free",
+            "description": "Today there will be a guest speaeker at PC talking about cog sci and design"
         }
     ],
     "show": [
@@ -46,6 +55,15 @@
             "time": "8:00pm",
             "price": "Free",
             "description": "We are having a free show put on by the UCSD Foosh Improv Group, Come by!"
+        },
+        {
+            "eventType": "show",
+            "eventTitle": "TEST LOCATION",
+            "location": "revelle",
+            "date": "2019-02-12",
+            "time": "01:02",
+            "price": "TEST LOCATION",
+            "description": "TEST LOCATION"
         }
     ],
     "guestSpeaker": [

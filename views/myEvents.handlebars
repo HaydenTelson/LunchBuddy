@@ -67,9 +67,8 @@
       <a class="closebtn" >×</a>
       <a href="home">Home Page</a>
       <a href="list">Events List</a>
-      <a href="map">View Map</a>
       <a href="create">Create Event</a>
-      <a href="myEvents">Your Events</a>
+      <a href="myEvents">My Events</a>
     </div>
     
     <header><h2> My Events </h2></header>
@@ -87,7 +86,7 @@
     <option><button class="btn"> Guest Speaker</button></option>
     </select>
 
-    <a href="list">
+    <a href="myEvents">
         <i class="fas fa-sync-alt fa-lg"></i>
     </a>
 
@@ -115,11 +114,12 @@
         <div class="container">
         <div class="eventText">
             <strong>{{this.eventTitle}}</strong><br>
-            Location: {{this.location}}<br>
+            Location: {{this.location}} <br>
             Time: {{this.time}}<br>
             Date: {{this.date}}<br>
             Price: {{this.price}}<br>
             Description: {{this.description}}
+            
         </div>
         </div>
         <br>
