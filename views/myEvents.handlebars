@@ -1,9 +1,10 @@
 <html>
-<head>
+{{!-- <head>
     <title>DropBy</title>
     <link href="css/DropByCSS.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-</head>
+</head> --}}
+{{> headers}}
 <body>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <div id="one">
@@ -67,7 +68,6 @@
       <a class="closebtn" >×</a>
       <a href="home">Home Page</a>
       <a href="list">Events List</a>
-      <a href="map">View Map</a>
       <a href="create">Create Event</a>
       <a href="myEvents">Your Events</a>
     </div>
@@ -87,7 +87,7 @@
     <option><button class="btn"> Guest Speaker</button></option>
     </select>
 
-    <a href="list">
+    <a href="myEvents">
         <i class="fas fa-sync-alt fa-lg"></i>
     </a>
 
