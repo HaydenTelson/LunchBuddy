@@ -12,20 +12,24 @@
 
         <div class="login">
             <div id="homeHeader">
+            <img src= "./images/Logo.png" style="width:50px;height:50px;">
+
             <header><h2>Login Page</h2></header>
             </div>
             <center>
-            <form>
+            <form action="/home">
                 Username:<br>
                 <input type="text" name="username" required><br>
                 Password:<br>
                 <input type="password" name="pwd" required><br>
+                <input type="submit" value="Login">
             </form>
             </center>
 
-            <center>
+            {{!-- <center>
+                
                 <a class="button" href="/home">Login!</a>
-            </center>
+            </center> --}}
 
             <center>
                 <p class="facebookLogin">Or login through Facebook <br>
