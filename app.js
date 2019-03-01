@@ -42,7 +42,9 @@ app.get('/create', index.viewCreate);
 app.get('/myEvents', index.viewMyEvents);
 app.get('/map', index.viewMap);
 app.get('/home', index.viewHome);
+app.get('/bVersion', index.viewBVersion);
 app.post('/createEvent', index.createEvent);
+
 // Example route
 // app.get('/users', user.list);
 

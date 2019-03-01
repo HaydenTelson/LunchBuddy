@@ -29,6 +29,10 @@ exports.viewHome  = function(req, res){
   res.render('home');
 };
 
+exports.viewBVersion = function(req, res){
+  res.render('bVersion', data)
+}
+
 //Take in the information from the create event form, store it data.JSON, then redirect client to myEvents
 exports.createEvent = function(req,res){
   console.log(req.body);
@@ -37,3 +41,4 @@ exports.createEvent = function(req,res){
   fs.writeFileSync("data.json", JSON.stringify(data, null, 4));
   res.render('myEvents', data);
 }
+

@@ -1,9 +1,10 @@
 <html>
-<head>
+{{!-- <head>
     <title>DropBy</title>
     <link href="css/DropByCSS.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-</head>
+</head> --}}
+{{> headers}}
 <body>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <div id="one">
@@ -42,7 +43,7 @@
     <option><button class="btn"> Guest Speaker</button></option>
     </select>
 
-    <a href="list">
+    <a href="myEvents">
         <i class="fas fa-sync-alt fa-lg"></i>
     </a>
 
@@ -59,6 +60,7 @@
             Date: {{this.date}}<br>
             Price: {{this.price}}<br>
             Description: {{this.description}}
+            <img src= "./images/{{this.location}}.png">
         </div>
         </div>
         <br>
@@ -70,12 +72,12 @@
         <div class="container">
         <div class="eventText">
             <strong>{{this.eventTitle}}</strong><br>
-            Location: {{this.location}} <img src="{{this.image}}" alt="map"> <br>
+            Location: {{this.location}} <br>
             Time: {{this.time}}<br>
             Date: {{this.date}}<br>
             Price: {{this.price}}<br>
             Description: {{this.description}}
-            
+            <img src= "./images/{{this.location}}.png">
         </div>
         </div>
         <br>
@@ -92,6 +94,7 @@
             Date: {{this.date}}<br>
             Price: {{this.price}}<br>
             Description: {{this.description}}
+            <img src= "./images/{{this.location}}.png">
         </div>
         </div>
         <br>
@@ -103,11 +106,15 @@
         <div class="container">
         <div class="eventText">
             <strong>{{this.eventTitle}}</strong><br>
+            <button onclick="showHiddenEventInfo()">Click Me</button>
+            <div id ="hiddenEventInfo{{this.eventTitle}}">
             Location: {{this.location}}<br>
             Time: {{this.time}}<br>
             Date: {{this.date}}<br>
             Price: {{this.price}}<br>
             Description: {{this.description}}
+            <img src= "./images/{{this.location}}.png">
+            </div>
         </div>
         </div>
         <br>
