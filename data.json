@@ -4,76 +4,84 @@
             "eventType": "study",
             "eventTitle": "Cogs Studying",
             "location": "Muir",
-            "date": "1/10/2019",
-            "time": "11:00am",
+            "date": "2019-10-01",
+            "time": "23:00",
             "price": "$5.00",
-            "description": "Come study today at Muir for Cogs!" 
+            "description": "Come study today at Muir for Cogs!",
+            "id": "1"
         }
     ],
     "food": [
         {
             "eventTitle": "Free Food!",
             "location": "ERC",
-            "date": "2/15/2019",
-            "time": "1:00pm",
+            "date": "2019-02-15",
+            "time": "01:00",
             "price": "Free",
-            "description": "Today on ridge walk the music club is giving away free burritos!"
+            "description": "Today on ridge walk the music club is giving away free burritos!",
+            "id": "2"
         },
         {
             "eventType": "food",
             "eventTitle": "FOOD",
-            "location": "PC",
+            "location": "Revelle",
             "date": "2019-02-21",
             "time": "14:00",
             "price": "Free",
-            "description": "COME GET FOOD!"
+            "description": "COME GET FOOD!",
+            "id": "3"
         },
         {
             "eventType": "food",
             "eventTitle": "FOOD",
-            "location": "PC",
+            "location": "Marshall",
             "date": "2019-02-21",
             "time": "13:01",
             "price": "Free",
-            "description": "Today there will be a guest speaeker at PC talking about cog sci and design"
+            "description": "Today there will be a guest speaeker at PC talking about cog sci and design",
+            "id": "4"
         },
         {
             "eventType": "food",
             "eventTitle": "FOOD",
-            "location": "Erc",
+            "location": "ERC",
             "date": "0003-01-02",
             "time": "01:01",
             "price": "Free",
-            "description": "Today there will be a guest speaeker at PC talking about cog sci and design"
+            "description": "Today there will be a guest speaeker at PC talking about cog sci and design",
+            "id": "5"
         }
     ],
     "show": [
         {
             "eventTitle": "Foosh Show",
-            "location": "Muir Woods",
-            "date": "2/20/2019",
-            "time": "8:00pm",
+            "location": "Muir",
+            "date": "2019-02-20",
+            "time": "20:00",
             "price": "Free",
-            "description": "We are having a free show put on by the UCSD Foosh Improv Group, Come by!"
+            "description": "We are having a free show put on by the UCSD Foosh Improv Group, Come by!",
+            "id": "6"
         },
         {
             "eventType": "show",
             "eventTitle": "TEST LOCATION",
-            "location": "revelle",
+            "location": "Revelle",
             "date": "2019-02-12",
             "time": "01:02",
             "price": "TEST LOCATION",
-            "description": "TEST LOCATION"
+            "description": "TEST LOCATION",
+            "id": "7"
         }
     ],
     "guestSpeaker": [
         {
             "eventTitle": "Cogs Speaker",
             "location": "PC Theater",
-            "date": "3/15/2019",
-            "time": "7:00pm",
+            "date": "2019-03-15",
+            "time": "19:00",
             "price": "$10",
-            "description": "Don Norman is holding a talk about design in the PC Theater"
+            "description": "Don Norman is holding a talk about design in the PC Theater",
+            "id": "8"
         }
     ]
 }
