@@ -1,9 +1,10 @@
 <html>
-<head>
+{{!-- <head>
     <title>DropBy</title>
     <link href="css/DropByCSS.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-</head>
+</head> --}}
+{{> headers}}
 <body>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <div id="one">
@@ -11,6 +12,7 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src = "js/navBar.js"></script>
     <script src = "js/filter.js"></script>
+    <script src="js/dropBy.js.js"></script>
 
     <div class="top">
     <a href="create">
@@ -51,14 +53,18 @@
 
     <div id = "foodEvents">
     {{# each food}}
-        <div class="container">
+        <div class="container" id="{{this.id}}">
         <div class="eventText">
             <strong>{{this.eventTitle}}</strong><br>
+            Date: {{this.date}}<br>
+            <button class="showEventBtn" id="{{this.id}}">Toggle Details</button>
+            <div class="testing" id ="hiddenEventInfo" style="display:none">
             Location: {{this.location}}<br>
             Time: {{this.time}}<br>
-            Date: {{this.date}}<br>
             Price: {{this.price}}<br>
-            Description: {{this.description}}
+            Description: {{this.description}}<br>
+            <img src= "./images/{{this.location}}.png" style="width:300px;height:300px;">
+            </div>
         </div>
         </div>
         <br>
@@ -67,15 +73,18 @@
 
     <div id = "studyEvents">
     {{# each study}}
-        <div class="container">
+        <div class="container" id="{{this.id}}">
         <div class="eventText">
             <strong>{{this.eventTitle}}</strong><br>
-            Location: {{this.location}} <img src="{{this.image}}" alt="map"> <br>
-            Time: {{this.time}}<br>
             Date: {{this.date}}<br>
+            <button class="showEventBtn" id="{{this.id}}">Toggle Details</button>
+            <div class="testing" id ="hiddenEventInfo" style="display:none">
+            Location: {{this.location}}<br>
+            Time: {{this.time}}<br>
             Price: {{this.price}}<br>
-            Description: {{this.description}}
-            
+            Description: {{this.description}}<br>
+            <img src= "./images/{{this.location}}.png" style="width:300px;height:300px;">
+            </div>
         </div>
         </div>
         <br>
@@ -84,14 +93,18 @@
 
     <div id = "showEvents">
     {{# each show}}
-        <div class="container">
+        <div class="container" id="{{this.id}}">
         <div class="eventText">
             <strong>{{this.eventTitle}}</strong><br>
+            Date: {{this.date}}<br>
+            <button class="showEventBtn" id="{{this.id}}">Toggle Details</button>
+            <div class="testing" id ="hiddenEventInfo" style="display:none">
             Location: {{this.location}}<br>
             Time: {{this.time}}<br>
-            Date: {{this.date}}<br>
             Price: {{this.price}}<br>
-            Description: {{this.description}}
+            Description: {{this.description}}<br>
+            <img src= "./images/{{this.location}}.png" style="width:300px;height:300px;">
+            </div>
         </div>
         </div>
         <br>
@@ -100,14 +113,18 @@
 
     <div id = "speakerEvents">
     {{# each guestSpeaker}}
-        <div class="container">
+        <div class="container" id="{{this.id}}">
         <div class="eventText">
             <strong>{{this.eventTitle}}</strong><br>
+            Date: {{this.date}}<br>
+            <button class="showEventBtn" id="{{this.id}}">Toggle Details</button>
+            <div class="testing" id ="hiddenEventInfo" style="display:none">
             Location: {{this.location}}<br>
             Time: {{this.time}}<br>
-            Date: {{this.date}}<br>
             Price: {{this.price}}<br>
-            Description: {{this.description}}
+            Description: {{this.description}}<br>
+            <img src= "./images/{{this.location}}.png" style="width:300px;height:300px;">
+            </div>
         </div>
         </div>
         <br>
