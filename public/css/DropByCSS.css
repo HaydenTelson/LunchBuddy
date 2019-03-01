@@ -90,8 +90,6 @@
     color: white;
     padding: 10px 15px;
     border: none;
-    /* position: fixed; */
-    float: left;
   }
   
   .openbtn:hover {
@@ -99,7 +97,7 @@
   }
 
   header {
-    /* padding-left: 50px;
+    /* padding-left: 10px;
     padding-right: 10px; */
     font-size: 25px;
     color: white;
@@ -117,7 +115,6 @@
   h2 {
     margin-top: 5px;
     margin-bottom: 0px;
-    /* margin-right: 20px; */
   }
 
   #two {
@@ -128,7 +125,7 @@
 
   .top {
     background-color: lavender;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
   }
 
   .top i {
@@ -187,7 +184,4 @@
   margin-bottom: 15px;
 }
 
-.top img {
-  margin-left: 30%;
-  display: inline-block;
-}
+
