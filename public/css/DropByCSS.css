@@ -174,14 +174,6 @@
     text-align: left;
   }
 
-  #googleMaps {
-    height: 600px;
-}
-
-#map {
-    height: 90%;
-}
-
 .homeButtons button {
   background-color: white;
   border: none;
