@@ -7,8 +7,18 @@
             "date": "2019-10-01",
             "time": "23:00",
             "price": "$5.00",
-            "description": "Come study today at Muir for Cogs!",
+            "description": "Come study today at Muir for Cogs with a professional tutor!",
             "id": "1"
+        },
+        {
+            "eventType": "study",
+            "eventTitle": "MMW Studying",
+            "location": "ERC",
+            "date": "2019-03-04",
+            "time": "21:00",
+            "price": "Free",
+            "description": "With the upcoming MMW final, lets get to studying",
+            "id": "11"
         }
     ],
     "food": [
@@ -33,23 +43,33 @@
         },
         {
             "eventType": "food",
-            "eventTitle": "FOOD",
+            "eventTitle": "Food Buffet",
             "location": "Marshall",
             "date": "2019-02-21",
             "time": "13:01",
-            "price": "Free",
-            "description": "Today there will be a guest speaeker at PC talking about cog sci and design",
+            "price": "$7.00",
+            "description": "We are doing an all you can eat buffet in Marshall",
             "id": "4"
         },
         {
             "eventType": "food",
-            "eventTitle": "FOOD",
+            "eventTitle": "Food Pantry",
             "location": "ERC",
             "date": "0003-01-02",
             "time": "01:01",
             "price": "Free",
-            "description": "Today there will be a guest speaeker at PC talking about cog sci and design",
+            "description": "We are collecting and giving out food from the food pantry",
             "id": "5"
+        },
+        {
+            "eventType": "food",
+            "eventTitle": "Taco Villa Special Event",
+            "location": "Marshall",
+            "date": "2019-03-08",
+            "time": "02:02",
+            "price": "$5.00",
+            "description": "Taco Villa is having 2 for $5 tacos",
+            "id": "10"
         }
     ],
     "show": [
@@ -64,13 +84,23 @@
         },
         {
             "eventType": "show",
-            "eventTitle": "TEST LOCATION",
+            "eventTitle": "The Wizard of Oz",
             "location": "Revelle",
             "date": "2019-02-12",
             "time": "01:02",
-            "price": "TEST LOCATION",
-            "description": "TEST LOCATION",
+            "price": "$15.00",
+            "description": "The UCSD case is putting on the The Wizard of Oz in the Revelle theater",
             "id": "7"
+        },
+        {
+            "eventType": "show",
+            "eventTitle": "Hairspray",
+            "location": "Muir",
+            "date": "2019-04-12",
+            "time": "05:00",
+            "price": "$10.00",
+            "description": "The Muir Musicial crew is putting on a production of Hairspray",
+            "id": "9"
         }
     ],
     "guestSpeaker": [
@@ -79,9 +109,27 @@
             "location": "Muir",
             "date": "2019-03-15",
             "time": "19:00",
-            "price": "$10",
+            "price": "$10.00",
             "description": "Don Norman is holding a talk about design in the PC Theater",
             "id": "8"
+        },
+        {
+            "eventTitle": "Motivational Speaker",
+            "location": "Warren",
+            "date": "2019-04-11",
+            "time": "16:00",
+            "price": "$5.00",
+            "description": "A motivational speaker will be coming to the Warren Bear to help motivate sad CS students",
+            "id": "12"
+        },
+        {
+            "eventTitle": "Computer Science Speaker",
+            "location": "Marshall",
+            "date": "2019-05-05",
+            "time": "20:00",
+            "price": "$7.00",
+            "description": "We have an industry professional coming to Marshall to talk to computer science students about gettnig jobs",
+            "id": "13"
         }
     ]
 }
