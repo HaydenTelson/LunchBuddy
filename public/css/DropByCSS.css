@@ -90,6 +90,7 @@
     color: white;
     padding: 10px 15px;
     border: none;
+    position: fixed;
   }
   
   .openbtn:hover {
@@ -100,9 +101,9 @@
     /* padding-left: 10px;
     padding-right: 10px; */
     font-size: 25px;
-    color: white;
+    color: black;
     text-align: center;
-    background-color: lavender;
+    background-color: white;
   }
 
   #homeHeader {
@@ -110,11 +111,13 @@
     padding-bottom: 20px;
     margin-bottom: 10px;
     text-align: center;
+    background-color: lavender;
   }
 
   h2 {
-    margin-top: 5px;
+    margin-top: 0px;
     margin-bottom: 0px;
+    padding-top: 10px;
   }
 
   #two {
@@ -124,12 +127,14 @@
 
 
   .top {
-    background-color: lavender;
-    padding-bottom: 15px;
+    background-color: black;
   }
 
   .top i {
     float: right;
+    color: white;
+    padding-right: 3px;
+    padding-top: 1px;
   }
 
   .middle {
@@ -182,6 +187,11 @@
   text-align: center;
   font-size: 16px;
   margin-bottom: 15px;
+}
+
+.top img {
+  display: inline-block;
+  margin-left: 45%;
 }
 
 
