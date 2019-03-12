@@ -103,7 +103,7 @@
     font-size: 25px;
     color: black;
     text-align: center;
-    background-color: white;
+    /* background-color: white; */
   }
 
   #homeHeader {
@@ -160,15 +160,15 @@
     padding: 20px;
   }
 
-  .home {
-    background-color: lavender;
+  /* .home body{
+    background-color: #e6e6fa;
     padding-bottom: 80px;
   }
 
-  .login {
+  .login body{
     background-color: lavender;
     padding-bottom: 80px;
-  }
+  } */
 
   .enter {
     text-align: center;
@@ -179,19 +179,63 @@
     text-align: left;
   }
 
-.homeButtons button {
-  background-color: white;
+.homeButtons a {
+  background-color: #B7CECE;
   border: none;
-  border-radius: 10px;
-  padding: 15px;
+  border-radius: 15px;
+  padding: 14px 10px;
   text-align: center;
   font-size: 16px;
   margin-bottom: 15px;
+  width: 200px;
 }
 
 .top img {
   display: inline-block;
   margin-left: 45%;
 }
+
+.box {
+  padding-top: 25px;
+}
+
+.box input[type = "text"],.box input[type = "password"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: black;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+
+.box input[type = "text"]:focus,.box input[type = "password"]:focus {
+  width: 280px;
+  border-color: #233A4D;
+}
+
+.box input[type = "submit"] {
+  border: 0;
+  background: #233A4D;
+  display: block;
+  margin: auto;
+  text-align: center;
+  border: 2px solid #233A4D;
+  padding: 14px 40px;
+  outline: none;
+  color: whitesmoke;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+/* .box input[type = "submit"]:hover {
+  background: #233A4D;
+} */
 
 
