@@ -90,6 +90,7 @@
     color: white;
     padding: 10px 15px;
     border: none;
+    position: fixed;
   }
   
   .openbtn:hover {
@@ -100,9 +101,9 @@
     /* padding-left: 10px;
     padding-right: 10px; */
     font-size: 25px;
-    color: white;
+    color: black;
     text-align: center;
-    background-color: lavender;
+    /* background-color: white; */
   }
 
   #homeHeader {
@@ -110,11 +111,13 @@
     padding-bottom: 20px;
     margin-bottom: 10px;
     text-align: center;
+    background-color: #F3E8EE;
   }
 
   h2 {
-    margin-top: 5px;
+    margin-top: 0px;
     margin-bottom: 0px;
+    padding-top: 10px;
   }
 
   #two {
@@ -124,12 +127,14 @@
 
 
   .top {
-    background-color: lavender;
-    padding-bottom: 15px;
+    background-color: black;
   }
 
   .top i {
     float: right;
+    color: white;
+    padding-right: 3px;
+    padding-top: 1px;
   }
 
   .middle {
@@ -155,15 +160,15 @@
     padding: 20px;
   }
 
-  .home {
-    background-color: lavender;
+  /* .home body{
+    background-color: #e6e6fa;
     padding-bottom: 80px;
   }
 
-  .login {
+  .login body{
     background-color: lavender;
     padding-bottom: 80px;
-  }
+  } */
 
   .enter {
     text-align: center;
@@ -174,14 +179,63 @@
     text-align: left;
   }
 
-.homeButtons button {
-  background-color: white;
+.homeButtons a {
+  background-color: #B7CECE;
   border: none;
-  border-radius: 10px;
-  padding: 15px;
+  border-radius: 15px;
+  padding: 14px 10px;
   text-align: center;
   font-size: 16px;
   margin-bottom: 15px;
+  width: 200px;
 }
 
+.top img {
+  display: inline-block;
+  margin-left: 45%;
+}
 
+.box {
+  padding-top: 25px;
+  text-align: center;
+}
+
+.box input[type = "text"],.box input[type = "password"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: black;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+
+.box input[type = "text"]:focus,.box input[type = "password"]:focus {
+  width: 280px;
+  border-color: #233A4D;
+}
+
+.box input[type = "submit"] {
+  border: 0;
+  background: #233A4D;
+  display: inline-block;
+  text-align: center;
+  border: 2px solid #233A4D;
+  /* padding: 14px 40px; */
+  width: 115px;
+  height: 55px;
+  outline: none;
+  color: whitesmoke;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.container {
+  background-color:#F3E8EE;
+}

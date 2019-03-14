@@ -2,6 +2,7 @@
     <head>
         <title>DropBy</title>
         <link href="css/DropByCSS.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         {{> facebook}}
 	    <script src="/js/facebook.js"></script>
     </head>
@@ -18,29 +19,21 @@
     ga('send', 'pageview');
     </script>
     <!-- End Google Analytics -->
-    <body>
+    <body style="background-color: #F3E8EE;">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <div class="login">
             <div id="homeHeader">
-            <img src= "./images/Logo.png" style="width:50px;height:50px;">
-
-            <header><h2>Login Page</h2></header>
+            <img src= "./images/DropByLogo.png" style="width:180px;height:180px;">
             </div>
-            <center>
-            <form action="/home">
-                Username:<br>
-                <input type="text" name="username" required><br>
-                Password:<br>
-                <input type="password" name="pwd" required><br>
-                <input type="submit" value="Login">
-            </form>
-            </center>
 
-            {{!-- <center>
-                
-                <a class="button" href="/home">Login!</a>
-            </center> --}}
+            <form class="box" action="/home">
+                <input type="text" name="username" placeholder="Username" required> <br>
+                <input type="password" name="password" placeholder="Password" required> <br>
+                <input type="submit" name="" value="Login">
+                <input type="submit" name="" value="Sign Up">
+                {{!-- <input class="btn btn-primary" type="submit" value="Login"> --}}
+            </form>
 
             <center>
                 <p class="facebookLogin">Or login through Facebook <br>
