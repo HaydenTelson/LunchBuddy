@@ -1,9 +1,4 @@
 <html>
-{{!-- <head>
-    <title>DropBy</title>
-    <link href="css/DropByCSS.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-</head> --}}
 {{> headers}}
 <body style="background-color: #F3E8EE;">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,6 +7,8 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src = "js/navBar.js"></script>
     <script src = "js/filter.js"></script>
+    <script src="js/dropBy.js.js"></script>
+    
     <!-- Google Analytics -->
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -24,12 +21,7 @@
     </script>
     <!-- End Google Analytics -->
 
-    
-
     <div class="top">
-
-    {{!-- <img src= "./images/Logo.png" style="width:50px;height:50px;"> --}}
-
 
     <a href="create">
         <i class="far fa-plus-square fa-3x"></i>
@@ -39,10 +31,9 @@
     <div id="mySidepanel" class="sidepanel">
       <a class="closebtn" >×</a>
       <a href="home">Home Page</a>
-      <a href="list">Events List View_A</a>
+      <a href="list">Events List</a>
       <a href="create">Create Event</a>
       <a href="myEvents">My Events</a>
-      <a href="bVersion">Events List View_B</a>
     </div>
 
     <img src= "./images/Logo.png" style="width:50px;height:50px;">
@@ -68,18 +59,22 @@
     </a>
 
     </div>
-</div>
+    </div>
 
     <div id = "foodEvents">
     {{# each food}}
-        <div class="container">
+        <div class="container" id="{{this.id}}">
         <div class="eventText">
             <strong>{{this.eventTitle}}</strong><br>
+            Date: {{this.date}}<br>
+            <button class="showEventBtn" id="{{this.id}}">Toggle Details</button>
+            <div class="testing" id ="hiddenEventInfo" style="display:none">
             Location: {{this.location}}<br>
             Time: {{this.time}}<br>
-            Date: {{this.date}}<br>
             Price: {{this.price}}<br>
-            Description: {{this.description}}
+            Description: {{this.description}}<br>
+            <img src= "./images/{{this.location}}.png" style="width:300px;height:200px;">
+            </div>
         </div>
         </div>
         <br>
@@ -88,15 +83,18 @@
 
     <div id = "studyEvents">
     {{# each study}}
-        <div class="container">
+        <div class="container" id="{{this.id}}">
         <div class="eventText">
             <strong>{{this.eventTitle}}</strong><br>
+            Date: {{this.date}}<br>
+            <button class="showEventBtn" id="{{this.id}}">Toggle Details</button>
+            <div class="testing" id ="hiddenEventInfo" style="display:none">
             Location: {{this.location}}<br>
             Time: {{this.time}}<br>
-            Date: {{this.date}}<br>
             Price: {{this.price}}<br>
-            Description: {{this.description}}
-            
+            Description: {{this.description}}<br>
+            <img src= "./images/{{this.location}}.png" style="width:300px;height:200px;">
+            </div>
         </div>
         </div>
         <br>
@@ -105,14 +103,18 @@
 
     <div id = "showEvents">
     {{# each show}}
-        <div class="container">
+        <div class="container" id="{{this.id}}">
         <div class="eventText">
             <strong>{{this.eventTitle}}</strong><br>
+            Date: {{this.date}}<br>
+            <button class="showEventBtn" id="{{this.id}}">Toggle Details</button>
+            <div class="testing" id ="hiddenEventInfo" style="display:none">
             Location: {{this.location}}<br>
             Time: {{this.time}}<br>
-            Date: {{this.date}}<br>
             Price: {{this.price}}<br>
-            Description: {{this.description}}
+            Description: {{this.description}}<br>
+            <img src= "./images/{{this.location}}.png" style="width:300px;height:200px;">
+            </div>
         </div>
         </div>
         <br>
@@ -121,18 +123,23 @@
 
     <div id = "speakerEvents">
     {{# each guestSpeaker}}
-        <div class="container">
+        <div class="container" id="{{this.id}}">
         <div class="eventText">
             <strong>{{this.eventTitle}}</strong><br>
+            Date: {{this.date}}<br>
+            <button class="showEventBtn" id="{{this.id}}">Toggle Details</button>
+            <div class="testing" id ="hiddenEventInfo" style="display:none">
             Location: {{this.location}}<br>
             Time: {{this.time}}<br>
-            Date: {{this.date}}<br>
             Price: {{this.price}}<br>
-            Description: {{this.description}}
+            Description: {{this.description}}<br>
+            <img src= "./images/{{this.location}}.png" style="width:300px;height:200px;">
+            </div>
         </div>
         </div>
         <br>
     {{/ each}}
     </div>
+
 </body>
 </html>
